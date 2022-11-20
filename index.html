@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <h1 id="title">inspirionDev Survey Form</h1>
+        <p id="description">Thank you for helping us improve our services</p>
+    </header>
+
+    <form id="survey-form">
+        <fieldset class="personalia">
+            <legend class="personalia-leg">Your Personal Information:</legend>
+            <label id="name-label">Full Name</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your name">
+            <label id="email-label">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your Email">
+            <label id="number-label">Your Age</label>
+            <input type="number" name="number" id="number" min="14" max="114" required placeholder="Enter your age"> 
+        </fieldset>
+
+        <fieldset class="dropdown-field">
+            <legend class="dropdown-leg">Choose your Profession:</legend>
+            <select name="dropdown" id="dropdown">
+                <option value="">I am a:</option>
+                <option value="front-end">Front-End Developer</option>
+                <option value="back-end">Back-End Developer</option>
+                <option value="full-stack">Full-Stack Developer</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="improvement-field">
+            <legend class="improvement-leg">Choose options(All that apply):</legend>
+            <p class="description">What would you like to see improved?</p> 
+            <label for="frontend" class="imp-label">Front-End</label>
+            <input type="checkbox" name="frontend" id="frontend" value="frontend" class="checkbox">
+            <label for="backend" class="imp-label">Back-End</label>
+            <input type="checkbox" name="backend" id="backend" value="backend" class="checkbox">
+            <label for="fullstack" class="imp-label">Full-Stack</label>
+            <input type="checkbox" name="fullstack" id="fullstack" value="fullstack" class="checkbox">
+            <label for="devops" class="imp-label">DevOps</label>
+            <input type="checkbox" name="devops" id="devops" value="devops"  class="checkbox">
+            <p class="description">What is yout favorite type of learning?</p>
+            <label for="video" class="radio-label">Video</label>
+            <input type="radio" name="education" id="video" class="radio-btn" value="video">
+            <label for="both" class="radio-label">Both</label>
+            <input type="radio" name="education" id="both"  class="radio-btn" value="both">
+            <label for="reading" class="radio-label">Reading</label>
+            <input type="radio" name="education" id="reading" class="radio-btn" value="reading">
+            <label for="inperson" class="radio-label">In-Person</label>
+            <input type="radio" name="education" id="inperson" class="radio-btn" value="inperson">
+        </fieldset>
+        <fieldset>
+            <legend>Tell us more:</legend>
+            <p class="description">Share your toughts with us:</p>
+            <textarea name="letter" id="letter" cols="60" rows="10" placeholder="I have an idea for a new course..."></textarea>
+        </fieldset>
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

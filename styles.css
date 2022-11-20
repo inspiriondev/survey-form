@@ -1,0 +1,232 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    margin: 200px;
+
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    color: #000;
+    padding: 10px;
+    margin-top: -200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+}
+
+.main-header{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .08em;
+    line-height: 2.8em;
+    width: 630px;
+    height: 100px;
+    min-height: 100px;
+    min-width: 300px;
+    margin: 20px auto 50px auto;
+    background-color: rgb(250, 250, 0);
+    border-radius: 20px;
+    /* position: absolute; Ovo je bio belaj sa overlapom */
+    top: 0px;
+    left: 25%;
+    right: 25%;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 10px 20px 0px #000;
+    display: block;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.survey-form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    display: block;
+    width: 450px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    /* border-radius: 20px; */
+    border: none;
+    font-weight: 600;
+}
+
+/* input:active {
+    font-size: 24px;
+    transition: 0.6s;
+} */
+
+
+label{
+    display: block;
+    color: #fff;
+    margin-left: 70px;
+}
+
+fieldset{
+    border: none;
+    padding: 20px;
+    width: 630px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border: 50px;
+    background-color: rgb(255, 45, 115);
+    box-shadow: 10px 20px 0px #000;
+    border-radius: 20px;
+    max-width: 630px;
+    min-width: none;
+    max-height: 400px;
+    display: block;
+}
+
+legend{
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+/* 
+.dropdown-field{
+    border: none;
+    padding: 20px;
+    width: 630px;
+    margin-top: 50px;
+    background-color: rgb(255, 45, 115);
+    box-shadow: 10px 20px 0px #000;
+    border-radius: 20px;
+    max-width: 630px;
+    min-width: none;
+    max-height: 400px;
+    display: block;
+} */
+
+#dropdown {
+    display: block;
+    width: 450px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    /* border-radius: 20px; */
+    border: none;
+    font-weight: 600;
+}
+
+option{
+    font-weight: 600;
+}
+
+.description{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+
+.improvement-field{
+    border: none;
+    padding: 20px;
+    width: 630px;
+    margin-top: 50px;
+    background-color: rgb(255, 45, 115);
+    box-shadow: 10px 20px 0px #000;
+    border-radius: 20px;
+    max-width: 630px;
+    min-width: none;
+    max-height: 400px;
+    display: block;
+}
+
+.checkbox {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40px;
+    padding: 20px;
+    width: 50px;
+    left: 50px;
+}
+
+.imp-label {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.radio-label{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.radio-btn{
+    display: inline-block;
+    width: 50px;
+    margin-left: 40px;
+}
+
+#letter{
+    width: 80%;
+    height: 60%;
+    margin: 10px 60px 20px 60px;
+    border: 3px solid #000;
+    text-decoration: none;
+    
+}
+
+#submit{
+    width: 40%;
+    height: 50px;
+    align-items: center;
+    margin-left: 30%;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 3px solid #000;
+    background-color: rgb(250, 250, 0);
+}
